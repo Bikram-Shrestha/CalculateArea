@@ -18,7 +18,31 @@ public class CalculateArea {
                 " or enter any other value to exit. ");
         Scanner optionScan = new Scanner(System.in);
         optionSelection    = optionScan.nextInt();
+        switch (optionSelection) {
+            case 1:
+            System.out.println("You have selected to calculate area of Circle.");
+            CircleArea.circleArea();
+                    break;
 
+            case 2:
+            System.out.println("You have selected to calculate area of Rectangle.");
+            RectangleArea.rectangleArea();
+                    break;
+            case 3:
+            System.out.println("You have selected to calculate area of Square.");
+            SquareArea.squareArea();
+                    break;
+
+            case 4:
+            System.out.println("You have selected to calculate area of Triangle.");
+            TriangleArea.triangleArea();
+                    break;
+
+            default:
+            System.out.println("You have selected to calculate area of Null.\n");
+            System.exit(0);
+                    break;
+        }
 
 
     }
