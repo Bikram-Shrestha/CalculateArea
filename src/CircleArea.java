@@ -2,7 +2,6 @@ import java.lang.Math;
 import java.text.DecimalFormat;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 
 /* This class contain circleArea method which can take radius and calculate area of circle.
 * This class also use math class to get the value of pi*/
