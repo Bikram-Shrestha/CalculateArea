@@ -18,6 +18,8 @@ public class CalculateArea {
                 " or enter any other value to exit. ");
         Scanner optionScan = new Scanner(System.in);
         optionSelection    = optionScan.nextInt();
+
+        // use switch to show options to select the required geometry for area calculation.
         switch (optionSelection) {
             case 1:
             System.out.println("You have selected to calculate area of Circle.");
@@ -39,7 +41,8 @@ public class CalculateArea {
                     break;
 
             default:
-            System.out.println("You have selected to calculate area of Null.\n");
+            System.out.println("You have selected not to calculate area.\n" +
+                    "Thank you for trying out the application");
             System.exit(0);
                     break;
         }
