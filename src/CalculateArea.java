@@ -15,6 +15,7 @@ public class CalculateArea {
                 "Rectangle  \t 2        \n" +
                 "Square     \t 3        \n" +
                 "Triangle   \t 4        \n" +
+                "Exit       \t 5        \n" +
                 "Please enter one of the number to select the option\n" +
                 " or enter any other value to exit. ");
         Scanner optionScan = new Scanner(System.in);
@@ -23,7 +24,7 @@ public class CalculateArea {
             int optionSelection = Integer.parseInt(option);
 
 
-            System.out.println(optionSelection);
+            System.out.println("You have selected Option:" + optionSelection);
 
             // use switch to show options to select the required geometry for area calculation.
 
@@ -62,7 +63,6 @@ public class CalculateArea {
                     "This application is going to close.");
             System.exit(0);
         }
-
 
     }
 
