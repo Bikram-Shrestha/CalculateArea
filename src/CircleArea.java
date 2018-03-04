@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class CircleArea{
     public static void circleArea(){
 
-    double PI = Math.PI;
+    double PI = Math.PI; //Assigning the value of PI from the Math class.
     System.out.println("Please enter the radius of the Circle.");
     Scanner radiusInput = new Scanner(System.in);
     double radius = radiusInput.nextDouble();

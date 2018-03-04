@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class CalculateArea {
     public static void main (String[] args){
         String option;
+        //Option menu for the user
         System.out.println("This application will calculate area.\n" +
                 "Please select one of the options to calculate area.\n" +
                 "Option     \t Enter    \n" +
@@ -56,7 +57,8 @@ public class CalculateArea {
             }
 
         }
-
+        //If the user input something else then the following action will be triggered.
+        // Exit from the application
         catch (NumberFormatException nfe)
         {
             System.out.println("You have entered other than option provided.\n" +
