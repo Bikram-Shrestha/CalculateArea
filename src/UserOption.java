@@ -23,7 +23,7 @@ public class UserOption {
             int optionSelection = Integer.parseInt(option);
 
 
-            System.out.println("You have selected Option:" + optionSelection);
+            System.out.println("You have selected Option: " + optionSelection);
 
             // use switch to show options to select the required geometry for area calculation.
 
