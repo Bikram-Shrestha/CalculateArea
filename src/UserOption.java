@@ -1,4 +1,6 @@
 import java.util.Scanner;
+/*This class provide the user to choose what the user want to perform based on provided options.
+*The user can choose to calculate area of various geometry or exit from the program.*/
 
 public class UserOption {
 
@@ -7,12 +9,12 @@ public class UserOption {
         //Option menu for the user
         System.out.println("This application will calculate area.\n" +
                 "Please select one of the options to calculate area.\n" +
-                "Option     \t Enter    \n" +
-                "Circle     \t 1        \n" +
-                "Rectangle  \t 2        \n" +
-                "Square     \t 3        \n" +
-                "Triangle   \t 4        \n" +
-                "Exit       \t 5        \n" +
+                "|Option     |\t Enter|     \n" +
+                "|Circle     |\t 1    |     \n" +
+                "|Rectangle  |\t 2    |     \n" +
+                "|Square     |\t 3    |     \n" +
+                "|Triangle   |\t 4    |     \n" +
+                "|Exit       |\t 5    |     \n" +
                 "Please enter one of the number to select the option\n" +
                 " or enter any other value to exit. ");
         Scanner optionScan = new Scanner(System.in);
@@ -45,10 +47,14 @@ public class UserOption {
                     TriangleArea.triangleArea();
                     break;
 
-                default:
+                case 5:
                     System.out.println("You have selected not to calculate area.\n" +
                             "Thank you for trying out the application");
                     System.exit(0);
+                    break;
+
+                default:
+                    userOption();
                     break;
             }
 
