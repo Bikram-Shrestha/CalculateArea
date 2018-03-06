@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -12,10 +11,8 @@ public class RectangleArea{
             System.out.println("Please enter the breadth of the Rectangle.");
             double breadth = input.nextDouble();
             double areaRectangle = length * breadth;
-
-            System.out.println("The area of the Rectangle is " +
-                    (new DecimalFormat("##.##").format(areaRectangle)) +
-                    " square meter.");
+            //use of printf for formatting double into two decimal point.
+            System.out.printf("The area of the Rectangle is %.2f square meter.", areaRectangle);
         }
         catch (InputMismatchException ime){
             System.out.println("Please enter the value in correct format. Eg 5");

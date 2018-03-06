@@ -54,6 +54,7 @@ public class UserOption {
                     break;
 
                 default:
+                    System.out.println("Your selection is invalid. Please enter again.");
                     userOption();
                     break;
             }
